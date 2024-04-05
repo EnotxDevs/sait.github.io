@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <center><h1>Популярная машина mitsubishi galant</h1></center>
+    <p>Mitsubishi Galant — среднеразмерный автомобиль, выпускавшийся автомобильной фирмой Mitsubishi Motors с 1969 по 2012 год. Название произошло от французского слова фр. Galant,
+    что означает «рыцарский»[2]. Создано девять различных поколений этой модели, суммарные продажи в настоящее время превышают пять миллионов машин.
+    Модель стартовала как компактный седан, однако со временем превратилась в средне-размерный автомобиль. 
+    Первоначально производство было основано в Японии, но с 1994 года на американском рынке стали продаваться автомобили, собранные на заводе, ранее принадлежавшем Diamond-Star Motors (DSM) в штате Иллинойс.</p>
+
+    <h2>Рейтинг</h2>
+    <p>Mitsubishi Galant одна из популярных не сильно дорогих машин, которая выглядт очень солидарно и спортивно</p>
+
+    <button class="b" onclick="Hide()">Скрыть изображение</button>
+    <button onclick="Show()">Показать изображение</button>
+<img id="img_mount" src="https://n-russia.ru/wp-content/uploads/1/6/e/16ec02a68bcb1e638cff9c4c8cb14d13.jpeg" class="img-fluid" alt="mitsubishi galant">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+        const imgMount = document.getElementById('img_mount');
+
+        function Hide() {
+    imgMount.style.display = 'none'
+}
+
+function Show() {
+    if (!imgMount.hasChildNodes()) {
+        const newImg = document.createElement('img');
+        newImg.src = 'https://avatars.mds.yandex.net/get-entity_search/372318/861696232/SUx182';
+        newImg.width = '150';
+        newImg.height = '150';
+        imgMount.appendChild(newImg);
+    } else {
+        imgMount.style.display = 'block';
+    }
+}
+    </script>
+    
+</body>
+</html>
